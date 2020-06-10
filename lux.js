@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Shydra 7/24 AKTİF TUTMA İŞLEMİ BAŞARILI");
+  console.log(Date.now() + "yeniden bağlandım kral");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -106,6 +106,7 @@ client.elevation = message => {
         return;
     }
     let permlvl = 0;
+    if (message.member.hasPermission("MANAGE_MESSAGES")) permlvl = 1;
     if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
     if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
     if (message.author.id === ayarlar.sahip) permlvl = 4;
@@ -126,5 +127,3 @@ client.on('error', e => {
 });
 
 client.login(ayarlar.token);
-
-//---------------------------------KOMUTLAR---------------------------------\\
