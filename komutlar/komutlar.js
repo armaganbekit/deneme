@@ -1,4 +1,4 @@
-// Bu Altyapı Tamamen Shydra Codeye Aittir.
+
 const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
@@ -20,5 +20,5 @@ module.exports.help = {
   name: 'komutlar',
   description: 'Botta bulunan tüm komutları gösterir',
   usage: 'komutlar'
-  // Bu Altyapı Tamamen Shydra Codeye Aittir.
+  
 };
