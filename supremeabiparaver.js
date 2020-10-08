@@ -145,4 +145,82 @@ client.on("message", msg => {
           }
         }
     });
+
+//küfür engel 
+client.on("message", async msg => {
+  
+  
+ const i = await db.fetch(`kufur_${msg.guild.id}`)
+    if (i == "acik") {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        if (kufur.some(word => msg.content.includes(word))) {
+          try {
+            if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+                          
+                      return msg.reply('Bu Sunucuda Küfür Filtresi Aktiftir.')
+            }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    }
+    if (!i) return;
+});
+
+client.on("messageUpdate", (oldMessage, newMessage) => {
+  
+  
+ const i = db.fetch(`${oldMessage.guild.id}.kufur`)
+    if (i) {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        if (kufur.some(word => newMessage.content.includes(word))) {
+          try {
+            if (!oldMessage.member.hasPermission("BAN_MEMBERS")) {
+                  oldMessage.delete();
+                          
+                      return oldMessage.reply('Bu Sunucuda Küfür Filtresi Aktiftir.')
+            }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    }
+    if (!i) return;
+});
+
+
+
+
+/////////////
+//OTOROL
+////////////
+client.on('guildMemberAdd', async member => {//This command is codare's.
+  
+  let role = await db.fetch(`autorole.${member.guild.id}.role`)
+  let channel = await db.fetch(`autorole.${member.guild.id}.channel`)
+  let system = await db.fetch(`autorole.${member.guild.id}.system`) === true;
+  
+  if (!system) return;
+   if (!member.user.bot) return;
+  
+  member.roles.add(role);
+  let ChannelSend = client.channels.cache.get(channel);
+  ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
+
+});//This command is codare's.
+client.on('guildMemberAdd', async member => {//This command is codare's.
+  
+  let role = await db.fetch(`autorole.${member.guild.id}.role`)
+  let channel = await db.fetch(`autorole.${member.guild.id}.channel`)
+  let system = await db.fetch(`autorole.${member.guild.id}.system`) === true;
+  
+  if (!system) return;
+   if (!member.user.bot) return; 
+  
+  member.roles.add(role);
+  let ChannelSend = client.channels.cache.get(channel);
+  ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
+
+});//
 client.login(ayarlar.token);
