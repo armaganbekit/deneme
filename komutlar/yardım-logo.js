@@ -77,7 +77,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "kullanıcı",
+  name: "logo",
   description: 'Bizim yaptığımız bir yardım kodu.',
   usage: 'yardım'
 };
