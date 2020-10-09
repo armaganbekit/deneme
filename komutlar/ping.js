@@ -4,9 +4,9 @@ exports.run = async (client ,message, args) =>{
 
   
   const embed = new Discord.MessageEmbed()
-  .setTitle("Pingim")
+  .setTitle("İşte Pingim")
   .setColor("RANDOM")
-  .setDescription(`${client.ws.ping} ms`)
+  .setDescription(`:computer: **•** Bot Gecikmesi \n ${client.ws.ping} ms`)
   message.channel.send(embed)
 };
 exports.conf = {
