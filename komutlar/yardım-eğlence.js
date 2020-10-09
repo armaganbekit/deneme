@@ -24,13 +24,13 @@ Bluefire Test Test Edin Lan Beni:d
 ▫️ Kullanım    \`${prefix}logo\`
 <a:bluefire1:761211197071687711> **Müzik Komutları.** 
 ▫️ Kullanım    \`${prefix}müzik\`
-<a:bluefire1:761211197071687711> **Radyo Komutları.**  
-▫️ Kullanım  \`${prefix}radyo\`
-<a:bluefire1:761211197071687711> **Eklenti Komutları.** 
-▫️ Kullanım  \`${prefix}eklenti\`
+<a:bluefire1:761211197071687711> **FBİ GİF**  
+▫️ Kullanım  \`${prefix}fbi-gif\`
+<a:bluefire1:761211197071687711> **Duello.** 
+▫️ Kullanım  \`${prefix}duello\`
 
 `)
-.setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
+.setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
@@ -42,7 +42,7 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['help'], 
+  aliases: [''], 
   permLevel: 0
 };
 

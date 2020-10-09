@@ -14,9 +14,9 @@ Bluefire Test Test Edin Lan Beni:d
 ▫️ Kullanım \`${prefix}Avatar\`
 <a:bluefire1:761211197071687711> **Uluslar Arası Korona Tablosu ** 
 ▫️ Kullanım \`${prefix}korona\`
-<a:bluefire1:761211197071687711> **Eğlence  Komutları.** 
+<a:bluefire1:761211197071687711> **Say Komudu** 
 ▫️ Kullanım  \`${prefix}eğlence\`
-<a:bluefire1:761211197071687711> **Botumuzun Komutları.** 
+<a:bluefire1:761211197071687711> **Kullanıcı Bilgi ** 
 ▫️ Kullanım \`${prefix}bot\`
 <a:bluefire1:761211197071687711> **Kullanıcı Komutları.** 
 ▫️ Kullanım  \`${prefix}kullanıcı\`
