@@ -126,6 +126,14 @@ client.on('error', e => {
     console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 ///////////KOMUTLAR///////////////////////
+
+
+
+
+
+//////////////////////////////////////////
+
+
 //reklam engel
 client.on("message", msg => {
  if(!db.has(`reklam_${msg.guild.id}`)) return;
@@ -208,8 +216,8 @@ client.on('guildMemberAdd', async member => {//This command is codare's.
   let ChannelSend = client.channels.cache.get(channel);
   ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
 
-});//This command is codare's.
-client.on('guildMemberAdd', async member => {//This command is codare's.
+});
+client.on('guildMemberAdd', async member => {
   
   let role = await db.fetch(`autorole.${member.guild.id}.role`)
   let channel = await db.fetch(`autorole.${member.guild.id}.channel`)
@@ -221,6 +229,30 @@ client.on('guildMemberAdd', async member => {//This command is codare's.
   member.roles.add(role);
   let ChannelSend = client.channels.cache.get(channel);
   ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
+
+//SA-AS SİSTEMİ
+
+client.on("message", async msg => {
+ 
+ 
+  const i = await db.fetch(`ssaass_${msg.guild.id}`);
+    if (i == 'acik') {
+      if (msg.content.toLowerCase() == 'sa' || msg.content.toLowerCase() == 's.a' || msg.content.toLowerCase() == 'selamun aleyküm' || msg.content.toLowerCase() == 'sea'|| msg.content.toLowerCase() == 'selam') {
+          try {
+ 
+                  return msg.reply('Aleyküm Selam, Hoşgeldin')
+          } catch(err) {
+            console.log(err);
+          }
+      }
+    }
+    else if (i == 'kapali') {
+   
+    }
+    if (!i) return;
+ 
+    });
+
 
 });//
 client.login(ayarlar.token);

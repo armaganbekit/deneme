@@ -28,7 +28,7 @@ Bluefire Test Test Edin Lan Beni:d
 ▫️ Kullanım  \`${prefix}fbi-gif\`
 <a:bluefire1:761211197071687711> **Duello.** 
 ▫️ Kullanım  \`${prefix}duello\`
-
+//çekliş sil duyuru kick sunucubilgi
 `)
 .setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())
