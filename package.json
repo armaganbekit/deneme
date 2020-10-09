@@ -1,7 +1,7 @@
 {
-  "main": "supremeabiparaver.js",
+  "main": "bluefirev12.js",
   "scripts": {
-    "start": "node supremeabiparaver.js"
+    "start": "node bluefirev12.js"
   },
   "engines": {
     "node": "12.x"

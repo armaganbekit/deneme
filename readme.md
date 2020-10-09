@@ -1,3 +1,3 @@
-Bu altyapı lux す#0549'a aittir lux.js ana dosyadır.
+Blue Fire Bot V12 Altapısıdır 
 -------------------------
-Code Master
+Ahmet Burak,Ender Tarafından Yapılmıştır
