@@ -27,7 +27,7 @@ Bluefire Test Test Edin Lan Beni:d
 <a:bluefire1:761211197071687711> **Gelişmiş Kick Sistemi**  
 ▫️ Kullanım  \`${prefix}kick\`
 <a:bluefire1:761211197071687711> **Gelişmiş Çekiliş Sistemi** 
-▫️ Kullanım  \`${prefix}çekiliş-yardım\`
+▫️ Kullanım  \`${prefix}çekiliş\`
 <a:bluefire1:761211197071687711> **Gelişmiş Mesaj Temizleme Sistemi** 
 ▫️ Kullanım  \`${prefix}sil\`
 <a:bluefire1:761211197071687711> **Gelişmiş Duyuru Sistemi** 

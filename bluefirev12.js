@@ -203,32 +203,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 /////////////
 //OTOROL
 ////////////
-client.on('guildMemberAdd', async member => {//This command is codare's.
-  
-  let role = await db.fetch(`autorole.${member.guild.id}.role`)
-  let channel = await db.fetch(`autorole.${member.guild.id}.channel`)
-  let system = await db.fetch(`autorole.${member.guild.id}.system`) === true;
-  
-  if (!system) return;
-   if (!member.user.bot) return;
-  
-  member.roles.add(role);
-  let ChannelSend = client.channels.cache.get(channel);
-  ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
 
-});
-client.on('guildMemberAdd', async member => {
-  
-  let role = await db.fetch(`autorole.${member.guild.id}.role`)
-  let channel = await db.fetch(`autorole.${member.guild.id}.channel`)
-  let system = await db.fetch(`autorole.${member.guild.id}.system`) === true;
-  
-  if (!system) return;
-   if (!member.user.bot) return; 
-  
-  member.roles.add(role);
-  let ChannelSend = client.channels.cache.get(channel);
-  ChannelSend.send(`Hey ${member.user.username} welcome to my server! I gave you role for members.`)
 
 //SA-AS SİSTEMİ
 
@@ -254,5 +229,34 @@ client.on("message", async msg => {
     });
 
 
-});//
+
+
+
+
+
+
+
+
+
+///Guard Kısmı
+
+//Kanal Korumu 
+client.on("channelDelete", async function(channel) {
+    let rol = await db.fetch(`kanalk_${channel.guild.id}`);
+  
+  if (rol) {
+const guild = channel.guild.cache;
+let channelp = channel.parentID;
+
+  channel.clone().then(z => {
+    let kanal = z.guild.channels.find(c => c.name === z.name);
+    kanal.setParent(
+      kanal.guild.channels.find(channel => channel.id === channelp)
+      
+    );
+  });
+  }
+})
+
+
 client.login(ayarlar.token);
