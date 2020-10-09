@@ -1,15 +1,11 @@
 const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json')
-exports.run = function(client, message) {
-  
-  let prefix  = ayarlar.prefix
-
-const yardım = new Discord.MessageEmbed()
-.setColor('GREEN')
-.setAuthor(`Bleufire`)
-.setDescription(`
-Bluefire Test Test Edin Lan Beni:d
-
+const ayarlar = require('../ayarlar.json');
+exports.run = async (client, message, args) => { 
+let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+let yardım = new Discord.RichEmbed()  
+.setAuthor(`${client.user.username}`, client.user.avatarURL)
+.setColor('RED')
+.addField('Bluefire Bot | Yardım Menüsü',`
 <a:bluefire1:761211197071687711> **Moderasyon Komutları.** 
 ▫️ Kullanım \`${prefix}moderasyon\`
 <a:bluefire1:761211197071687711> **Moderasyon2 Komutları.** 
@@ -29,26 +25,17 @@ Bluefire Test Test Edin Lan Beni:d
 <a:bluefire1:761211197071687711> **Eklenti Komutları.** 
 ▫️ Kullanım  \`${prefix}eklenti\`
 
-
+Prefix Değiştirmek İçin s!prefix <prefix>
 `)
-.setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
-.setThumbnail(message.author.avatarURL())
-message.channel.send(yardım)
-
-  
-   
-  
-};
-
+.setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
+ message.channel.send(yardım) 
+  };
 exports.conf = {
-  enabled: true,
+  enabled: true,  
   guildOnly: false, 
-  aliases: ['help'], 
+  aliases: ['help','commands','y','komutlar'], 
   permLevel: 0
 };
-
 exports.help = {
-  name: "yardım",
-  description: 'Bizim yaptığımız bir yardım kodu.',
-  usage: 'yardım'
+  name: 'yardım'
 };
