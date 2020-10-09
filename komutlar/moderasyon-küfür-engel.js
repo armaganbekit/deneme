@@ -17,7 +17,7 @@ return
 exports.conf = {
  enabled: true,
  guildOnly: false,
- aliases: ['küfür'],
+ aliases: ['küfür','küfür-engel'],
  permLevel: 0
 };
 

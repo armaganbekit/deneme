@@ -22,7 +22,7 @@ exports.run = async (bot, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['reklam'],
+  aliases: ['reklam','reklam-engel'],
   permLevel: 0
 };
  
