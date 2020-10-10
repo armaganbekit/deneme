@@ -28,12 +28,12 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: [''], 
+  aliases: ['eko'], 
   permLevel: 0
 };
 
 exports.help = {
-  name: "eğlence",
+  name: "ekonomi",
   description: 'Bizim yaptığımız bir yardım kodu.',
-  usage: ''
+  usage: 'ekonomi'
 };
