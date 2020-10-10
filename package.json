@@ -1,7 +1,7 @@
 {
-  "main": "bluefirev12.js",
+  "main": "bluefire-v12.js",
   "scripts": {
-    "start": "node bluefirev12.js"
+    "start": "node bluefire-v12.js"
   },
   "engines": {
     "node": "12.x"
