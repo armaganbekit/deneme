@@ -261,9 +261,7 @@ client.on("message", async message => {
 
 });
 
-/////////////
-//OTOROL
-////////////
+
 
 
 //SA-AS SİSTEMİ
