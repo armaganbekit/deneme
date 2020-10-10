@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json')
+const db = require('quick.db');
 exports.run = function(client, message) {
   
-  let prefix  = ayarlar.prefix
+let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
@@ -20,10 +21,8 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım  \`${prefix}kullanıcı\`
 <a:bluefire1:761211197071687711> **Logo Komutları.**  
 ▫️ Kullanım    \`${prefix}logo\`
-<a:bluefire1:761211197071687711> **Müzik Komutları.** 
-▫️ Kullanım    \`${prefix}müzik\`
-<a:bluefire1:761211197071687711> **Radyo Komutları.**  
-▫️ Kullanım  \`${prefix}radyo\`
+<a:bluefire1:761211197071687711> **Koruma Komutları.** 
+▫️ Kullanım    \`${prefix}koruma\`
 <a:bluefire1:761211197071687711> **Eklenti Komutları.** 
 ▫️ Kullanım  \`${prefix}eklenti\`
 
