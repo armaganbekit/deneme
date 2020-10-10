@@ -9,7 +9,7 @@ let prefix =  ayarlar.prefix
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
 .setAuthor(`Bluefire`)
-.setDescription(`
+.addField(`
 <a:bluefire1:761211197071687711> **Gelişmiş Ban Sistemi** 
 ▫️ Kullanım \`${prefix}ban\`
 <a:bluefire1:761211197071687711> **Gelişmiş Küfür Engel Sistemi** 
