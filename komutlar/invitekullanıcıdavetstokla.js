@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json')
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
-let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+let prefix =  ayarlar.prefix
 
   const kinsta = new Discord.MessageEmbed()
     .setColor("#0BF3B7")

@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json')
 const db = require("quick.db");//emirhansaraç
 module.exports.run = async (bot, message, args) => {
-let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+let prefix =  ayarlar.prefix
   if (!message.member.hasPermission("KICK_MEMBERS")) {
     const embed = new Discord.MessageEmbed()
       .setDescription("```Ne yazık ki bu komutu kullanmaya yetkin yok.```")

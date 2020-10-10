@@ -1,9 +1,8 @@
 const ayarlar = require('../ayarlar.json')
 const Discord = require("discord.js"),
   db = require("quick.db");
-
-exports.run = async (client, message, args) => {
-let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+module.exports.run = async (bot, message, args) => {
+let prefix =  ayarlar.prefix
   let veri = await db.fetch(`rol1_${message.guild.id}`);
   let veri12 = await db.fetch(`roldavet1_${message.guild.id}`);
   let veri21 = await db.fetch(`roldavet2_${message.guild.id}`);
