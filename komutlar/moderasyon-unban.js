@@ -67,7 +67,7 @@ message.channel.send(`<@!${user}> Adlı Kullanıcının Yasağı Başarıyla Kal
   exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: ['un-ban'],
     permLevel: 0,
         kategori: "Yetkili"
  

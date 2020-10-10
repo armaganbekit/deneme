@@ -28,7 +28,7 @@ if (!paragönderme) return message.reply('Miktar Belirt')
   
 };
 exports.conf = {
-  aliases: [],
+  aliases: ['para-gönder'],
   permLevel: 0
 };
 exports.help = {

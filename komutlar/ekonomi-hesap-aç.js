@@ -25,7 +25,7 @@ db.set(`hesap-${message.author.id}`,"Hesap Açıldı")
   
 }///HAZIRLAYANLAR Clearly_ , FORCEX OgnSert
 exports.conf = {
-  aliases: [],
+  aliases: ['hesap-aç'],
   permLevel: 0,
 };
 

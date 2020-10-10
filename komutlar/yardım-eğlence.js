@@ -27,7 +27,7 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: [], 
+  aliases: ['eglence'], 
   permLevel: 0
 };
 

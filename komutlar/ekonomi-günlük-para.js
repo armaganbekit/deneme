@@ -44,7 +44,7 @@ message.channel.send(`${espri} Kadar Parayı Kaptın!`);
 
 
 exports.conf = {
-  aliases: [],
+  aliases: ['günlük-para'],
   permLevel: 0
 };
 

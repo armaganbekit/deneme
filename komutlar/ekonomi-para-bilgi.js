@@ -12,7 +12,7 @@ let parapara = await db.fetch(`para_${kişi.id}`) || 0
   message.channel.send(`${parapara}`)
 };
 exports.conf = {
-  aliases: [],
+  aliases: ['para'],
   permLevel: 0
 };
 //HAZIRLAYANLAR Clearly_ , FORCEX ogün Sert

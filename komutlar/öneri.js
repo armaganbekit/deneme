@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json')
-let prefix = ayarlar.prefix
+const db = require('quick.db');
+
 
 exports.run = async(client, message, args) => {
-  
+let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
 let type = args.slice(0).join(' ');
 if (type.length < 1) {
   
@@ -18,7 +19,7 @@ return message.channel.send(embed)
 const embed = new Discord.MessageEmbed()
 
 .setColor('GREEN')
-.setDescription('İstek Kodunuz Başarıyla Bildirildi.\nEn Yakın Zamanda <@&kanal id> Kanalından Cevap Vereceğiz!')
+.setDescription('İstek Kodunuz Başarıyla Bildirildi.\nEn Yakın Zamanda <@&760954425908527154> Kanalından Bakıcağız Eğer Güzel Bir İstek İse Size Ulaşıcağız!')
 
 message.channel.send(embed)
   
@@ -33,7 +34,7 @@ const embed2 = new Discord.MessageEmbed()
 
 .setThumbnail(message.author.avatarURL)
 
-client.channels.cache.get('kanal id').send(embed2); 
+client.channels.cache.get('760954425908527154').send(embed2); 
 
 };
 

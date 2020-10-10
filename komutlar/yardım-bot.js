@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json')
 const db = require('quick.db');
@@ -10,21 +9,11 @@ const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
 .setAuthor(`Bluefire`)
 .setDescription(`
-Davet Menüsü Kullanıcılar
-davetlerim
-davet-oluştur
-davet-stokla
+<a:bluefire1:761211197071687711> **Botumuzu Davet Et** 
+▫️ Kullanım  \`${prefix}sil\`
+<a:bluefire1:761211197071687711> **Gelişmiş Forge Ban Sistemi** 
+▫️ Kullanım \`${prefix}forge-ban\`
 
-Davet Menüsü Yetkililer
-davet-kanal
-davet-kanal-sıfırla
-davet-ekle
-davet-sıfırla 
-davet-sil
-Rütbeler rütbe-ekle
-rütbe-sil 
-rütbe-liste
-   
 `)
 .setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())
@@ -38,12 +27,12 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['invite'], 
+  aliases: [], 
   permLevel: 0
 };
 
 exports.help = {
-  name: "invite",
+  name: "moderasyon2",
   description: 'Bizim yaptığımız bir yardım kodu.',
   usage: 'yardım'
 };

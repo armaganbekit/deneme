@@ -16,7 +16,7 @@ let kişi = message.mentions.users.first() || message.author
 };
 ///HAZIRLAYANLAR Clearly_ , FORCEX.js
 exports.conf = {
-  aliases: [],
+  aliases: ['hesap'],
   permLevel: 0
 };
 exports.help = {

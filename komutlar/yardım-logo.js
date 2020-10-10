@@ -50,7 +50,7 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['help'], 
+  aliases: ['logolar'], 
   permLevel: 0
 };
 

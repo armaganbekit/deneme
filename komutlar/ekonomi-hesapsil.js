@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
 exports.conf = {
     enabled: false,
     guildOnly: true,
-    aliases: [],
+    aliases: ['hesabımı-sil'],
     permLevel: 0
 }
 
