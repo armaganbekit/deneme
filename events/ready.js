@@ -7,14 +7,15 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  console.log(
-    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: Aktif, Komutlar yüklendi!`
-  );
-  console.log(
-    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: ${
-      client.user.username
-    } ismi ile giriş yapıldı!`
-  );
+  console.log('[------------] BlueFire V12 [-------------]');
+ console.log(`Yıkamayacaksınız <3`);
+ console.log(`Artık V12 Yiz <3`);
+ console.log(`Yakında Tikli Olucaz <3`);
+ console.log(`Dblden Onay Alıcaz <3`);
+  console.log("Prefix: " + prefix);
+  console.log("Bot ID'si: " + client.user.id);
+  console.log("Bot Isim: " + client.user.username);
+  console.log('[------------] BlueFire V12 [-------------]'); 
   client.user.setStatus("online");
   var oyun = [
        "s-yardım V12 Beta 0.0.1"
