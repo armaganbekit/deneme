@@ -27,29 +27,7 @@ const yardım = new Discord.MessageEmbed()
 = ${prefix}greenangrycheetah Logo Üretir
 = ${prefix}bluebear Logo Üretir
 = ${prefix}hivegaming Logo Üretir
-= ${prefix}angrywolf Logo Üretir
-= ${prefix}bersekbear Logo Üretir
-= ${prefix}firetiger Logo Üretir
-= ${prefix}wolfgaming Logo Üretir
-= ${prefix}orangebear Logo Üretir
-= ${prefix}warriorghelmet Logo Üretir
-= ${prefix}skullwing Logo Üretir
 **Normal Logolar**
-= ${prefix}fluffy Logo Üretir
-= ${prefix}arrow Logo Üretir
-= ${prefix}amped Logo Üretir
-= ${prefix}blue Logo Üretir
-= ${prefix}moonsoon Logo Üretir
-= ${prefix}gold Logo Üretir
-**Extra Logolar**
-${prefix}bubble
-${prefix}bubble2
-${prefix}comic
-${prefix}cool
-${prefix}discord
-${prefix}kalp
-${prefix}müzik-logo
-**Sıradan Logolar**
 ${prefix}logo1
 ${prefix}logo2
 ${prefix}logo3
@@ -58,7 +36,7 @@ ${prefix}logo5
 ${prefix}logo6
 ${prefix}logo7
 ${prefix}logo8
-
+**Botumuz Yakında Discord Onayı Alabiliceği İçin Logo Komutlarını Azalttık**
 `)
 .setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())

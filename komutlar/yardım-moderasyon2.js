@@ -19,6 +19,8 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım  \`${prefix}prefix\`
 <a:bluefire1:761211197071687711> **Gelişmiş Otorol Sistemi** 
 ▫️ Kullanım  \`${prefix}otorol\`
+<a:bluefire1:761211197071687711> **Gelişmiş İnvite Sistemi** 
+▫️ Kullanım  \`${prefix}invite\`
 `)
 .setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())

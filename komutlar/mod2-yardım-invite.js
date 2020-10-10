@@ -43,7 +43,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "kullanıcı",
+  name: "invite",
   description: 'Bizim yaptığımız bir yardım kodu.',
   usage: 'yardım'
 };
