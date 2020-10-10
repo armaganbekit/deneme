@@ -23,7 +23,7 @@ Bluefire Test Test Edin Lan Beni:d
 <a:bluefire1:761211197071687711> **Öneri**  
 ▫️ Kullanım    \`${prefix}öneri\`
 <a:bluefire1:761211197071687711> **Hata** 
-▫️ Kullanım    \`${prefix}hata-bilfir\`
+▫️ Kullanım    \`${prefix}hata-bildir\`
   
 `)
 .setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
