@@ -422,13 +422,29 @@ client.on("message", async msg => {
 
 
 
-
-
-
-
 ///Guard Kısmı
+//Kanal Koruma
+client.on("channelDelete", async function(channel) {
+    let rol = await db.fetch(`kanalk_${channel.guild.id}`);
+  
+  if (rol) {
+const guild = channel.guild.cache;
+let channelp = channel.parentID;
 
-//eklicez lan
+  channel.clone().then(z => {
+    let kanal = z.guild.channels.find(c => c.name === z.name);
+    kanal.setParent(
+      kanal.guild.channels.find(channel => channel.id === channelp)
+      
+    );
+  });
+  }
+})
+//Kanal Koruma Son
+
+
+
+
 
 //KOMUTLAR SON 
 client.login(ayarlar.token);
