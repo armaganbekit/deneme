@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json')
 const db = require('quick.db');
 exports.run = function(client, message) {
   
-let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')

@@ -389,18 +389,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 
 
 ////prefix
-client.on("message", async message => {
-  let prefix = await db.fetch(`prefix.${message.guild.id}`) || ayarlar.prefix 
-const messageArray = message.content.split(" ");
-const cmd = messageArray[0].toLowerCase();
-const args = messageArray.slice(1);
-if (!message.content.startsWith(prefix)) return;
-const commandfile =
-client.commands.get(cmd.slice(prefix.length)) ||
-client.commands.get(client.aliases.get(cmd.slice(prefix.length)));
-if (commandfile) commandfile.run(client, message, args);
-});
-
+//KALDIRILDI
 ///Prefix Son
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -441,5 +430,7 @@ client.on("message", async msg => {
 
 //eklicez lan
 
-
+//KOMUTLAR SON 
 client.login(ayarlar.token);
+console.log (Date.now() + "Token Doğru Bot Başlatılıyor");
+//TOKEN BAĞLANMA

@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "BlueFire Test"
+       "BlueFire V12 Beta 0.0.1"
   ];
 
   setInterval(function() {
