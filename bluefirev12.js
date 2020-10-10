@@ -128,7 +128,27 @@ client.on('error', e => {
 ///////////KOMUTLAR///////////////////////
 
 
+//otorol
+client.on("guildMemberAdd", async member => {
+  let kanal1 = await db.fetch(`otorolkanal_${member.guild.id}`);
+  let rol1 = await db.fetch(`otorolrol_${member.guild.id}`);
 
+  let kanal = member.guild.channels.cache.get(kanal1);
+  let rol = member.guild.roles.cache.get(rol1);
+
+  if (!kanal) return;
+  if (!rol) return;
+
+  const embed = new Discord.MessageEmbed()
+
+    .setColor("BLACK")
+    .setDescription(
+      `Sunucuya Katılan **${member}** Adlı Kullanıcıya Başarıyla \`${rol.name}\` Rolü Verildi.`
+    );
+
+  kanal.send(embed);
+  member.roles.add(rol);
+});
 
 
 //////////////////////////////////////////
