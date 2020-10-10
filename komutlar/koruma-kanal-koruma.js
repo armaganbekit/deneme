@@ -31,7 +31,7 @@ let prefix = ayarlar.prefix
   }
 };
 exports.conf = {
-  aliases: [],
+aliases:['kanal-koruma'],
   permLevel: 0
 };
 exports.help = {

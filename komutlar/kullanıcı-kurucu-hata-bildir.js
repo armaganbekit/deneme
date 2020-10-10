@@ -16,7 +16,7 @@ message.channel.send("Bug bildiriminiz gönderildi. :white_check_mark:").then(me
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['hata-bildir'],
   permLevel: 0  
 };
 
