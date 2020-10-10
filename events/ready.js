@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-       "lux ke"
+       "BlueFire Test"
   ];
 
   setInterval(function() {
