@@ -23,8 +23,8 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım    \`${prefix}logo\`
 <a:bluefire1:761211197071687711> **Koruma Komutları.** 
 ▫️ Kullanım    \`${prefix}koruma\`
-<a:bluefire1:761211197071687711> **Eklenti Komutları.** 
-▫️ Kullanım  \`${prefix}eklenti\`
+<a:bluefire1:761211197071687711> **Ekonomi Komutları.** 
+▫️ Kullanım  \`${prefix}ekonomi\`
 
 `)
 .setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")

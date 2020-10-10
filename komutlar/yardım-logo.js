@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
+const db = require('quick.db');
 const ayarlar = require('../ayarlar.json')
 exports.run = function(client, message) {
   
-  let prefix  = ayarlar.prefix
+let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Bleufire`)
+.setAuthor(`Bluefire`)
 .setDescription(`
-Bluefire Test Test Edin Lan Beni:d
    **Oyun Logoları**
 = ${prefix}spartanhelmet Logo Üretir
 = ${prefix}blackbear Logo Üretir
@@ -60,7 +60,7 @@ ${prefix}logo7
 ${prefix}logo8
 
 `)
-.setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
+.setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

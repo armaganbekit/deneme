@@ -1,12 +1,13 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json')
+const db = require('quick.db');
 exports.run = function(client, message) {
   
-  let prefix  = ayarlar.prefix
+let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Bleufire`)
+.setAuthor(`Bluefire`)
 .setDescription(`
 <a:bluefire1:761211197071687711> **Gelişmiş Mesaj Temizleme Sistemi** 
 ▫️ Kullanım  \`${prefix}sil\`
@@ -19,7 +20,7 @@ const yardım = new Discord.MessageEmbed()
 <a:bluefire1:761211197071687711> **Gelişmiş Otorol Sistemi** 
 ▫️ Kullanım  \`${prefix}otorol\`
 `)
-.setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
+.setImage("https://cdn.discordapp.com/attachments/742828321259389050/758346500853596240/image_processing20200113-8836-fxpwkr.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
