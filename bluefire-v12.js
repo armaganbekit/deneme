@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "yeniden bağlandım kral");
+  console.log(Date.now() + "Bluefire V12 Sistemi Online");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -128,6 +128,48 @@ client.on('error', e => {
 ///////////KOMUTLAR///////////////////////
 
 
+
+
+
+
+
+//Sayaç
+
+
+
+client.on("message", async message => {
+  if (!message.guild) return;
+
+  if (db.has(`sayac_${message.guild.id}`) === true) {
+    if (db.fetch(`sayac_${message.guild.id}`) <= message.guild.members.cache.size) {
+      const embed = new Discord.MessageEmbed()
+        .setTitle(`Tebrikler ${message.guild.name}!`)
+        .setDescription(`Başarıyla \`${db.fetch(`sayac_${message.guild.id}`)}\` kullanıcıya ulaştık! Sayaç sıfırlandı!`)
+        .setColor("RANDOM");
+      message.channel.send(embed);
+      message.guild.owner.send(embed);
+      db.delete(`sayac_${message.guild.id}`);
+    }
+  }
+});
+client.on("guildMemberRemove", async member => {
+  const channel = db.fetch(`sKanal_${member.guild.id}`);
+  if (db.has(`sayac_${member.guild.id}`) == false) return;
+  if (db.has(`sKanal_${member.guild.id}`) == false) return;
+
+    member.guild.channels.cache.get(channel).send(`**${member.user.tag}** Sunucudan ayrıldı! \`${db.fetch(`sayac_${member.guild.id}`)}\` üye olmamıza son \`${db.fetch(`sayac_${member.guild.id}`) - member.guild.memberCount}\` üye kaldı!`);
+});
+client.on("guildMemberRemove", async member => {
+  const channel = db.fetch(`sKanal_${member.guild.id}`);
+  if (db.has(`sayac_${member.guild.id}`) == false) return;
+  if (db.has(`sKanal_${member.guild.id}`) == false) return;
+
+    member.guild.channels.cache.get(channel).send(`**${member.user.tag}** Sunucuya Katıldı :tada:! \`${db.fetch(`sayac_${member.guild.id}`)}\` üye olmamıza son \`${db.fetch(`sayac_${member.guild.id}`) - member.guild.memberCount}\` üye kaldı!`);
+});
+
+///Sayaç Son
+
+
 //otorol
 client.on("guildMemberAdd", async member => {
   let kanal1 = await db.fetch(`otorolkanal_${member.guild.id}`);
@@ -149,7 +191,7 @@ client.on("guildMemberAdd", async member => {
   kanal.send(embed);
   member.roles.add(rol);
 });
-
+///Otorol Son
 
 //////////////////////////////////////////
 
@@ -173,6 +215,8 @@ client.on("message", msg => {
           }
         }
     });
+
+///Reklam Engel Son
 
 //küfür engel 
 client.on("message", async msg => {
@@ -216,6 +260,8 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
     }
     if (!i) return;
 });
+
+///Küfür Engel Son
 
 
 ////prefix
@@ -261,8 +307,8 @@ client.on("message", async message => {
 
 });
 
-
-
+///Prefix Son
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //SA-AS SİSTEMİ
 
@@ -289,7 +335,7 @@ client.on("message", async msg => {
 
 
 
-
+///Sa-as Son
 
 
 
@@ -299,23 +345,7 @@ client.on("message", async msg => {
 
 ///Guard Kısmı
 
-//Kanal Korumu 
-client.on("channelDelete", async function(channel) {
-    let rol = await db.fetch(`kanalk_${channel.guild.id}`);
-  
-  if (rol) {
-const guild = channel.guild.cache;
-let channelp = channel.parentID;
-
-  channel.clone().then(z => {
-    let kanal = z.guild.channels.find(c => c.name === z.name);
-    kanal.setParent(
-      kanal.guild.channels.find(channel => channel.id === channelp)
-      
-    );
-  });
-  }
-})
+//eklicez lan
 
 
 client.login(ayarlar.token);

@@ -12,8 +12,6 @@ Bluefire Test Test Edin Lan Beni:d
 
 <a:bluefire1:761211197071687711> **Gelişmiş Ban Sistemi** 
 ▫️ Kullanım \`${prefix}ban\`
-<a:bluefire1:761211197071687711> **Gelişmiş Forge Ban Sistemi** 
-▫️ Kullanım \`${prefix}forge-ban\`
 <a:bluefire1:761211197071687711> **Gelişmiş Küfür Engel Sistemi** 
 ▫️ Kullanım  \`${prefix}küfür-engel\`
 <a:bluefire1:761211197071687711> **Gelişmiş Reklam Engel Sistemi** 
@@ -26,8 +24,6 @@ Bluefire Test Test Edin Lan Beni:d
 ▫️ Kullanım    \`${prefix}yavaş-mod\`
 <a:bluefire1:761211197071687711> **Gelişmiş Kick Sistemi**  
 ▫️ Kullanım  \`${prefix}kick\`
-<a:bluefire1:761211197071687711> **Gelişmiş Çekiliş Sistemi** 
-▫️ Kullanım  \`${prefix}çekiliş\`
 <a:bluefire1:761211197071687711> **Gelişmiş Mesaj Temizleme Sistemi** 
 ▫️ Kullanım  \`${prefix}sil\`
 <a:bluefire1:761211197071687711> **Gelişmiş Duyuru Sistemi** 

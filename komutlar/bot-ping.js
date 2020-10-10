@@ -1,24 +1,44 @@
-const Discord = require('discord.js')
- 
-exports.run = async (client ,message, args) =>{
+const Discord = require('discord.js');
+const db = require('quick.db');
 
+exports.run = async (app, message, client) => {
   
-  const embed = new Discord.MessageEmbed()
-  .setTitle("İşte Pingim")
+  const kinda = new Discord.MessageEmbed()
+  
+  .setColor("RED")
+  .setDescription('Ping Hesaplanıyor...')
+  
+   let start = Date.now(); 
+   let mesaj = await message.channel.send(kinda)
+   let diff = (Date.now() - start); 
+   let API = (app.ws.ping).toFixed(2)
+    
+    setInterval(() => {
+        
+   const only = new Discord.MessageEmbed()
+   .setTitle("İşte Pingim")
   .setColor("RANDOM")
-  .setDescription(`:computer: **•** Bot Gecikmesi \n ${client.ws.ping} ms`)
-  message.channel.send(embed)
+   .setDescription(`\nMesaj Gecikme Süresi ; **${diff}Ms** \n\nBot Gecikme Süresi ; **${API}Ms**`)
+  
+   
+    mesaj.edit(only);
+      
+    }, 5000)
+  
+  
+  
+  
 };
+
 exports.conf = {
- enabled: true,
- guildOnly: false,
- aliases: ['ping'],
- permLevel: 0
+  enabled: true,
+  guildOnly: false,
+  aliases: ['ms'],
+  permLevel: 0
 };
- 
+
 exports.help = {
- name: 'ping',
- description: 'Botun Pingine Bakarsın',
- usage: '!ping'
+  name: 'ping',
+  description: 'Kinda Code & Only V12.',
+  usage: 'ping'
 };
- 
