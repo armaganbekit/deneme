@@ -41,7 +41,7 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['mod'], 
+  aliases: ['moderasyon'], 
   permLevel: 0
 };
 
