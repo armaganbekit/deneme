@@ -18,7 +18,7 @@ exports.run = async (app, message, client) => {
    const only = new Discord.MessageEmbed()
    .setTitle("İşte Pingim")
   .setColor("RANDOM")
-   .setDescription(`\nMesaj Gecikme Süresi ; **${diff}Ms** \n\nBot Gecikme Süresi ; **${API}Ms**`)
+   .setDescription(`:keyboard: • **Mesaj Gecikme Süresi** ; **${diff}Ms** \n :computer: • **Bot Gecikme Süresi**; **${API}Ms**`)
   
    
     mesaj.edit(only);

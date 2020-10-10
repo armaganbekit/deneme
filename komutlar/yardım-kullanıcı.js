@@ -18,16 +18,12 @@ Bluefire Test Test Edin Lan Beni:d
 ▫️ Kullanım  \`${prefix}eğlence\`
 <a:bluefire1:761211197071687711> **Kullanıcı Bilgi ** 
 ▫️ Kullanım \`${prefix}bot\`
-<a:bluefire1:761211197071687711> **Kullanıcı Komutları.** 
-▫️ Kullanım  \`${prefix}kullanıcı\`
-<a:bluefire1:761211197071687711> **Logo Komutları.**  
-▫️ Kullanım    \`${prefix}logo\`
-<a:bluefire1:761211197071687711> **Müzik Komutları.** 
-▫️ Kullanım    \`${prefix}müzik\`
-<a:bluefire1:761211197071687711> **Radyo Komutları.**  
-▫️ Kullanım  \`${prefix}radyo\`
-<a:bluefire1:761211197071687711> **Eklenti Komutları.** 
-▫️ Kullanım  \`${prefix}eklenti\`
+<a:bluefire1:761211197071687711> **Sunucu Bilgi Komutları.** 
+▫️ Kullanım  \`${prefix}sunucu-bilgi\`
+<a:bluefire1:761211197071687711> **Öneri**  
+▫️ Kullanım    \`${prefix}öneri\`
+<a:bluefire1:761211197071687711> **Hata** 
+▫️ Kullanım    \`${prefix}hata-bilfir\`
   
 `)
 .setImage("https://cdn.discordapp.com/attachments/740871896614043669/748878433840398367/Baslksz-1.png")
