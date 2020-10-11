@@ -36,3 +36,5 @@ exports.help = {
   description: 'Bizim yaptığımız bir yardım kodu.',
   usage: 'yardım'
 };
+//**Kayıt Sistemi** <a:setting:750076062716788807> \`${prefix}kayıtsistemi\` Gelişmiş Kayıt Sistemi`,true)
+//**Davet Sistemi** <a:setting:750076062716788807> \`${prefix}davetsistemi\` Gelişmiş Davet Sistemi`,true)
