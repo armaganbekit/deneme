@@ -15,15 +15,8 @@ exports.run = async (client, message, args) => {
   .setFooter('Logo Oluşturuldu')
   message.channel.send(embed)
 }
-exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ['angrycat'],
-    permLevel: 0
-}
-
-exports.help = {
-    name: 'angrycat',
-    description: 'Yazdığınız yazıyı bannera çevirir.',
-    usage: 'alev <yazı>'
-}
+exports.config = {  
+  name: 'angrycat',
+  aliases: ['angrycat']
+ 
+};
