@@ -18,7 +18,7 @@ module.exports = client => {
   console.log('[------------] BlueFire V12 [-------------]'); 
   client.user.setStatus("online");
   var oyun = [
-       "s-yardım V12 Beta 0.0.1"
+       "Everlasting Bot V12"
   ];
 
   setInterval(function() {
