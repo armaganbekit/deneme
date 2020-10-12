@@ -7,7 +7,7 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  console.log('[------------] BlueFire V12 [-------------]');
+  console.log('[------------] Everlasting Desing By V12 ⇝*๖̶̶̶ζ͜͡SÚPR£M£⇝#0001 [-------------]');
  console.log(`Yıkamayacaksınız <3`);
  console.log(`Artık V12 Yiz <3`);
  console.log(`Yakında Tikli Olucaz <3`);
@@ -15,7 +15,7 @@ module.exports = client => {
   console.log("Prefix: " + prefix);
   console.log("Bot ID'si: " + client.user.id);
   console.log("Bot Isim: " + client.user.username);
-  console.log('[------------] BlueFire V12 [-------------]'); 
+  console.log('[------------] Everlasting Desing By V12 ⇝*๖̶̶̶ζ͜͡SÚPR£M£⇝#0001 [-------------]'); 
   client.user.setStatus("online");
   var oyun = [
        "Everlasting Bot V12"
