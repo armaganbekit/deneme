@@ -8,7 +8,7 @@ let prefix = db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Bluefire`)
+.setAuthor(`Everlasting`)
 .setDescription(`
 Davet Menüsü Kullanıcılar
 davetlerim
