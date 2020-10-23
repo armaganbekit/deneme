@@ -37,7 +37,7 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım  \`${prefix}duyuru\`
 
 `)
-.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")
+.setImage("")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

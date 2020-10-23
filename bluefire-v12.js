@@ -415,5 +415,5 @@ let channelp = channel.parentID;
 
 
 
-//KOMUTLAR SON 
+//KOMUTLAR SON blUEFİRE V12 ALTYAPISI ONAY YOK
 client.login(ayarlar.token);

@@ -20,5 +20,6 @@
     "chalk": "^4.1.0",
     "node-superfetch": "^0.1.10",
     "weather.js": "^0.1.0"
-  }
+  },
+  "license": "MIT"
 }
