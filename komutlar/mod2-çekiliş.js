@@ -59,7 +59,7 @@ var filter = m => m.author.id === message.author.id;
                   let giveEmbed = new Discord.MessageEmbed()
                   .setColor("#f558c9")
                   .setDescription(`**Ödül: ${title}** \n🎉'a Basarak Katıl \nKalan Süre : ${duration} \n **Başlama Zamanı :** ${hours}:${minutes}:${seconds} ${suffix}`)
-                  .setFooter(message.author.username + " Destiny Bot Çekiliş Sistemi", message.author.avatarURL);
+                  .setFooter(message.author.username + " 4RM4G4N Bot Çekiliş Sistemi", message.author.avatarURL);
                   message.guild.channels.cache.find(x => x.name ===  room).send(' :heavy_check_mark: **ÇEKİLİŞ BAŞLADI** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
                      let re = m.react('🎉');
                      setTimeout(() => {
@@ -70,14 +70,14 @@ var filter = m => m.author.id === message.author.id;
                        .setAuthor(message.author.username, message.author.avatarURL)
                        .setTitle(title)
                        .setColor("#f558c9")
-            .setFooter("Destiny Bot çekiliş sistemi")
+            .setFooter("4RM4G4N Bot çekiliş sistemi")
                        .addField('Çekiliş Bitti !🎉',`Kazanan : ${gFilter} \nBitiş zamanı :`)
                        .setTimestamp()
                      m.edit('** 🎉 ÇEKİLİŞ BİTTİ 🎉**' , {embed: endEmbed});
 
                        var embedLel = new Discord.MessageEmbed()
                         .setColor("RANDOM")
-                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("Destiny bot çekiliş sistemi")
+                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("4RM4G4N bot çekiliş sistemi")
                         message.guild.channels.cache.find(x => x.name ===  room).send(`**Tebrikler ${gFilter}! \`${title}\` kazandın!**` , embedLel)                }, ms(duration));
             });
                 } catch(e) {

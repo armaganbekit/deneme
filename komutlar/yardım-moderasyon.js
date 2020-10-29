@@ -9,8 +9,6 @@ const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
 .setAuthor(`4RM4G4N Bot`)
 .setDescription(`
-**Gelişmiş Forge Ban Sistemi** 
-▫️ Kullanım \`${prefix}force-ban\`
  **Gelişmiş Çekiliş Sistemi** 
 ▫️ Kullanım  \`${prefix}çekiliş\`
  **Gelişmiş Otorol Sistemi** 
