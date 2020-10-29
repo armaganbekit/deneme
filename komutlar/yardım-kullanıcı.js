@@ -12,8 +12,6 @@ const yardım = new Discord.MessageEmbed()
 .setDescription(`
  **Avatar (birini etiketlesen bile olur)** 
 ▫️ Kullanım \`${prefix}avatar\`
- **Uluslar Arası Korona Tablosu ** 
-▫️ Kullanım \`${prefix}korona\`
  **Say Komudu** 
 ▫️ Kullanım  \`${prefix}eğlence\`
  **Kullanıcı Bilgi ** 
