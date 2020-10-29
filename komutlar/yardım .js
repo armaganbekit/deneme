@@ -6,9 +6,9 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`BlueFire`)
+.setAuthor(`4RM4G4N`)
 .setDescription(`
-<a:bluefire1:761211197071687711> **Moderasyon Komutları.** 
+<a:tik:700310228499169301> **Moderasyon Komutları.** 
 ▫️ Kullanım \`${prefix}moderasyon\`
 <a:bluefire1:761211197071687711> **Eğlence  Komutları.** 
 ▫️ Kullanım  \`${prefix}eğlence\`
@@ -25,7 +25,7 @@ const yardım = new Discord.MessageEmbed()
 
 
 `)
-.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")//
+.setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")//
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
@@ -37,12 +37,12 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['help'], 
+  aliases: ['help','h','y'], 
   permLevel: 0
 };
 
 exports.help = {
   name: "yardım",
-  description: 'Bizim yaptığımız bir yardım kodu.',
+  description: 'yardım',
   usage: 'yardım'
 };

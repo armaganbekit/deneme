@@ -7,18 +7,18 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  console.log('[------------] Bluefire Desing By V12 ⇝*๖̶̶̶ζ͜͡SÚPR£M£⇝#0001 [-------------]');
- console.log(`Yıkamayacaksınız <3`);
- console.log(`Artık V12 Yiz <3`);
- console.log(`Yakında Tikli Olucaz <3`);
- console.log(`Dblden Onay Aldık <3`);
+  console.log('[------------] YouTube/4RM4G4N [-------------]');
+ console.log(`YouTube/4RM4G4N`);
+ console.log(`Abonel Ol`);
+ console.log(`Like At`);
+ console.log(`Takipde Kal`);
   console.log("Prefix: " + prefix);
   console.log("Bot ID'si: " + client.user.id);
   console.log("Bot Isim: " + client.user.username);
-  console.log('[------------] Bluefire Desing By V12 ⇝*๖̶̶̶ζ͜͡SÚPR£M£⇝#0001 [-------------]');
+  console.log('[------------] YouTube/4RM4G4N [-------------]');
   client.user.setStatus("online");
   var oyun = [
-       "Tanıtım"
+       "YouTube/4RM4G4N"
   ];
 
   setInterval(function() {
