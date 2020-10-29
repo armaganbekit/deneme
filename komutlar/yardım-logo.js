@@ -7,7 +7,7 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Everlasting`)
+.setAuthor(`Bluefire`)
 .setDescription(`
 **Normal Logolar**
 ${prefix}logo1
@@ -20,7 +20,7 @@ ${prefix}logo7
 ${prefix}logo8
 **Botumuz Yakında Discord Onayı Alabiliceği İçin Logo Komutlarını Azalttık**
 `)
-.setImage("")
+.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

@@ -7,7 +7,7 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Everlasting`)
+.setAuthor(`BLUEFİRE`)
 .setDescription(`
 <a:bluefire1:761211197071687711> **Gelişmiş Forge Ban Sistemi** 
 ▫️ Kullanım \`${prefix}forge-ban\`
@@ -37,7 +37,7 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım  \`${prefix}duyuru\`
 
 `)
-.setImage("")
+.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

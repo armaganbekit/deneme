@@ -7,7 +7,7 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Everlasting`)
+.setAuthor(`Bluefire`)
 .setDescription(`
 <a:bluefire1:761211197071687711> **Kanal Koruma** 
 ▫️ Kullanım \`${prefix}kanal-koruma aç/kapat\`
@@ -16,7 +16,7 @@ const yardım = new Discord.MessageEmbed()
 <a:bluefire1:761211197071687711> **Sohbet Kapat** 
 ▫️ Kullanım \`${prefix}sohbet-kapat\`
 `)
-.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")
+.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
