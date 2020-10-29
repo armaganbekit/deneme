@@ -11,10 +11,6 @@ const yardım = new Discord.MessageEmbed()
 .setDescription(`
  **Gelişmiş Çekiliş Sistemi** 
 ▫️ Kullanım  \`${prefix}çekiliş\`
- **Gelişmiş Otorol Sistemi** 
-▫️ Kullanım  \`${prefix}otorol\`
- **Gelişmiş İnvite Sistemi** 
-▫️ Kullanım  \`${prefix}invite\`
  **Gelişmiş Ban Sistemi** 
 ▫️ Kullanım \`${prefix}ban\`
  **Gelişmiş Küfür Engel Sistemi** 
