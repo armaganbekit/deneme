@@ -10,7 +10,7 @@ const yardım = new Discord.MessageEmbed()
 .setAuthor(`4RM4G4N Bot`)
 .setDescription(`
 **Gelişmiş Forge Ban Sistemi** 
-▫️ Kullanım \`${prefix}forge-ban\`
+▫️ Kullanım \`${prefix}force-ban\`
  **Gelişmiş Çekiliş Sistemi** 
 ▫️ Kullanım  \`${prefix}çekiliş\`
  **Gelişmiş Otorol Sistemi** 
