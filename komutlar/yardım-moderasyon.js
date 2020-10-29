@@ -7,37 +7,37 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`BLUEFİRE`)
+.setAuthor(`4RM4G4N Bot`)
 .setDescription(`
-<a:bluefire1:761211197071687711> **Gelişmiş Forge Ban Sistemi** 
+**Gelişmiş Forge Ban Sistemi** 
 ▫️ Kullanım \`${prefix}forge-ban\`
-<a:bluefire1:761211197071687711> **Gelişmiş Çekiliş Sistemi** 
+ **Gelişmiş Çekiliş Sistemi** 
 ▫️ Kullanım  \`${prefix}çekiliş\`
-<a:bluefire1:761211197071687711> **Gelişmiş Otorol Sistemi** 
+ **Gelişmiş Otorol Sistemi** 
 ▫️ Kullanım  \`${prefix}otorol\`
-<a:bluefire1:761211197071687711> **Gelişmiş İnvite Sistemi** 
+ **Gelişmiş İnvite Sistemi** 
 ▫️ Kullanım  \`${prefix}invite\`
-<a:bluefire1:761211197071687711> **Gelişmiş Ban Sistemi** 
+ **Gelişmiş Ban Sistemi** 
 ▫️ Kullanım \`${prefix}ban\`
-<a:bluefire1:761211197071687711> **Gelişmiş Küfür Engel Sistemi** 
+ **Gelişmiş Küfür Engel Sistemi** 
 ▫️ Kullanım  \`${prefix}küfür-engel\`
-<a:bluefire1:761211197071687711> **Gelişmiş Reklam Engel Sistemi** 
+ **Gelişmiş Reklam Engel Sistemi** 
 ▫️ Kullanım \`${prefix}reklam-engel\`
-<a:bluefire1:761211197071687711> **Gelişmiş Sa-As Sistemi** 
+ **Gelişmiş Sa-As Sistemi** 
 ▫️ Kullanım  \`${prefix}sa-as\`
-<a:bluefire1:761211197071687711> **Gelişmiş Un Ban**  
+ **Gelişmiş Un Ban**  
 ▫️ Kullanım    \`${prefix}unban\`
-<a:bluefire1:761211197071687711> **Gelişmiş Yavaş Mod Sistemi** 
+ **Gelişmiş Yavaş Mod Sistemi** 
 ▫️ Kullanım    \`${prefix}yavaş-mod\`
-<a:bluefire1:761211197071687711> **Gelişmiş Kick Sistemi**  
+ **Gelişmiş Kick Sistemi**  
 ▫️ Kullanım  \`${prefix}kick\`
-<a:bluefire1:761211197071687711> **Gelişmiş Mesaj Temizleme Sistemi** 
+ **Gelişmiş Mesaj Temizleme Sistemi** 
 ▫️ Kullanım  \`${prefix}sil\`
-<a:bluefire1:761211197071687711> **Gelişmiş Duyuru Sistemi** 
+ **Gelişmiş Duyuru Sistemi** 
 ▫️ Kullanım  \`${prefix}duyuru\`
 
 `)
-.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
+.setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
@@ -49,7 +49,7 @@ message.channel.send(yardım)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: [], 
+  aliases: ['m','mod'], 
   permLevel: 0
 };
 

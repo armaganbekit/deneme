@@ -6,9 +6,9 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`4RM4G4N`)
+.setAuthor(`4RM4G4N Bot`)
 .setDescription(`
-<a:tik:700310228499169301> **Moderasyon Komutları.** 
+        **Genel Komutlar** 
 ▫️ Kullanım \`${prefix}moderasyon\`
 <a:bluefire1:761211197071687711> **Eğlence  Komutları.** 
 ▫️ Kullanım  \`${prefix}eğlence\`
