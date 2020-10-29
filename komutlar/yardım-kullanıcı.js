@@ -21,7 +21,7 @@ const yardım = new Discord.MessageEmbed()
 **Sunucu Bilgi Komutları.** 
 ▫️ Kullanım  \`${prefix}sunucu-bilgi\`
 `)
-.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
+.setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

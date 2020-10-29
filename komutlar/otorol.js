@@ -1,53 +1,34 @@
-const Discord = require('discord.js')
-const db = require('quick.db');
-const ayarlar = require('../ayarlar.json')
-let prefix = ayarlar.prefix
+const discord = require('discord.js')
+const db = require('quick.db')
 
-exports.run = async (client, message, args) => {
-  
-let rol = message.mentions.roles.first() 
+exports.run = async(client, message, args) => {
+
+if (args[0] === 'sıfırla') {
+let otorol = db.fetch(`otorol_${message.guild.id}`)
+if (!otorol) return message.channel.send(`Otorol Ayarlanmadığı İçin Sıfırlanamaz!`)
+message.channel.send(`Otorol Başarıyla Sıfırlandı!`)
+  db.delete(`otorollog_${message.guild.id}`)
+  db.delete(`otorol_${message.guild.id}`)
+  return;
+}
+
+let rol = message.mentions.roles.first()
+if(!rol) return message.channel.send(`Sunucuya Gelenlere Verilecek Rolü Belirtmeyi Unuttun!`)
+
 let kanal = message.mentions.channels.first()
+if (!kanal) return message.channel.send(`Otorol Logunu Ayarlamayı Unuttun!`)
 
-if(!rol) {
-  
-const embed2 = new Discord.MessageEmbed()
-//lrowsxrd
-.setDescription('Lütfen Bir Rol Etiketle. Örnek Kullanım : **${prefix}otorol @rol #kanal**')
-.setColor('RED')
-//lrowsxrd
-return message.channel.send(embed2)
-};
+db.set(`otorol_${message.guild.id}`, rol.id)
+db.set(`otorollog_${message.guild.id}`, kanal.id)
 
-if(!kanal) {
-  //lrowsxrd
-const embed3 = new Discord.MessageEmbed()
-//lrowsxrd
-.setDescription('Lütfen Bir Kanal Etiketle. Örnek Kullanım : **${prefix}otorol @rol #kanal**')
-.setColor('RED')
-  //lrowsxrd
-return message.channel.send(embed3)
-};
-  //lrowsxrd
-db.set(`otorolrol_${message.guild.id}`, rol.id)
-db.set(`otorolkanal_${message.guild.id}` ,kanal.id)
-  //lrowsxrd
-const embed = new Discord.MessageEmbed()
-//lrowsxrd
-.setColor('GREEN')
-.setDescription(`Otorol Rolü **@${rol.name}** Olarak, Bildirimin Gideceği Kanal İse **#${kanal.name}** Olarak Ayarlandı.\n\n**Not: Botun Rolü En Üstte Olmaz İse Rol Vermez.**`)
-//lrowsxrd
-message.channel.send(embed)
-};
-    //lrowsxrd
+message.channel.send(`Otorol Başarıyla Ayarlandı ! `)  
+}
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
+  name: true,
+  guildonly: false,
   aliases: ['oto-rol'],
-  permLevel: 0
-};
-//lrowsxrd
+  permlevel: 0
+}
 exports.help = {
-  name: 'otorol',
-  description: 'lrows v12',
-  usage: 'otorol'
-};
+  name: 'otorol'
+}

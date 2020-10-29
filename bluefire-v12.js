@@ -256,6 +256,18 @@ let channelp = channel.parentID;
 })
 //Kanal Koruma Son
 
+//otorol
+client.on("guildMemberAdd", async member => {
+  let rol = db.fetch(`otorol_${member.guild.id}`)
+  let kanal = db.fetch(`otorollog_${member.guild.id}`)
+
+if (!rol) return;
+
+member.roles.add(rol)
+
+client.channels.cache.get(kanal).send(`Sunucuya ${member} Adlı Kullanıcı Katıldı. Otomatik Olarak Rolü Verildi!`)
+})
+//otorolson syzer
 
 
 
