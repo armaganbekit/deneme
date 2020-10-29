@@ -6,7 +6,7 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Everlasting`)
+.setAuthor(`BlueFire`)
 .setDescription(`
 <a:bluefire1:761211197071687711> **Moderasyon Komutları.** 
 ▫️ Kullanım \`${prefix}moderasyon\`
@@ -20,12 +20,12 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım    \`${prefix}logo\`
 <a:bluefire1:761211197071687711> **Koruma Komutları.** 
 ▫️ Kullanım    \`${prefix}koruma\`
-<a:bluefire1:761211197071687711> **Ekonomi Komutları.** 
-▫️ Kullanım  \`${prefix}ekonomi\`
+<a:bluefire1:761211197071687711> **Eğlence2 Komutları.** 
+▫️ Kullanım  \`${prefix}eğlence2\`
 
 
 `)
-.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")
+.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")//Sponsor AGA SPONSORUN RESMİ
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
