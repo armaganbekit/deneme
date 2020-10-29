@@ -10,17 +10,17 @@ const yardım = new Discord.MessageEmbed()
 .setDescription(`
         **Genel Komutlar** 
 ▫️ Kullanım \`${prefix}moderasyon\`
-<a:bluefire1:761211197071687711> **Eğlence  Komutları.** 
+ **Eğlence  Komutları.** 
 ▫️ Kullanım  \`${prefix}eğlence\`
-<a:bluefire1:761211197071687711> **Botumuzun Komutları.** 
+ **Botumuzun Komutları.** 
 ▫️ Kullanım \`${prefix}bot\`
-<a:bluefire1:761211197071687711> **Kullanıcı Komutları.** 
+ **Kullanıcı Komutları.** 
 ▫️ Kullanım  \`${prefix}kullanıcı\`
-<a:bluefire1:761211197071687711> **Logo Komutları.**  
+ **Logo Komutları.**  
 ▫️ Kullanım    \`${prefix}logo\`
-<a:bluefire1:761211197071687711> **Koruma Komutları.** 
+ **Koruma Komutları.** 
 ▫️ Kullanım    \`${prefix}koruma\`
-<a:bluefire1:761211197071687711> **Eğlence2 Komutları.** 
+**Eğlence2 Komutları.** 
 ▫️ Kullanım  \`${prefix}eğlence2\`
 
 

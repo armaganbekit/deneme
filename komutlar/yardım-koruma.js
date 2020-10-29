@@ -7,16 +7,16 @@ let prefix =  ayarlar.prefix
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Bluefire`)
+.setAuthor(`4RM4G4N`)
 .setDescription(`
-<a:bluefire1:761211197071687711> **Kanal Koruma** 
+ **Kanal Koruma** 
 ▫️ Kullanım \`${prefix}kanal-koruma aç/kapat\`
-<a:bluefire1:761211197071687711> **Sohbet Aç** 
+**Sohbet Aç** 
 ▫️ Kullanım \`${prefix}sohbet-aç\`
-<a:bluefire1:761211197071687711> **Sohbet Kapat** 
+ **Sohbet Kapat** 
 ▫️ Kullanım \`${prefix}sohbet-kapat\`
 `)
-.setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
+.setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 

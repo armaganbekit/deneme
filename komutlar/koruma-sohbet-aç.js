@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
     SEND_MESSAGES: null
   });
 
-  message.channel.send("Sohbet kanalı ``Yazılamaz`` durumuna getirildi.");
+  message.channel.send("Sohbet kanalı ``Yazılır`` durumuna getirildi.");
 };
 
 exports.conf = {

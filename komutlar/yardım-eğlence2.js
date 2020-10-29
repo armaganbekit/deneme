@@ -6,15 +6,15 @@ exports.run = function(client, message) {
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`BlueFire`)
+.setAuthor(`4RM4G4N`)
 .setDescription(`
-s!aduketçek Aduket Çeker
-s!ara155 Polisi Arar
-s!balıktut Balık Tutarsınız
-s!espri espri yapar
-s!taksimdayı Taksim Dayı Fotosu Atar
+a?aduketçek Aduket Çeker
+a?ara155 Polisi Arar
+a?balıktut Balık Tutarsınız
+a?espri espri yapar
+a?taksimdayı Taksim Dayı Fotosu Atar
 `)
-.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")//Sponsor LOGO EVERLASTİNG 
+.setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")//syzer
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
