@@ -39,6 +39,6 @@ exports.conf = {
 
 exports.help = {
   name: 'ping',
-  description: 'Kinda Code & Only V12.',
+  description: 'ping',
   usage: 'ping'
 };

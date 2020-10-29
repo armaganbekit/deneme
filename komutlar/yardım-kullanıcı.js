@@ -10,15 +10,15 @@ const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
 .setAuthor(`Bluefire`)
 .setDescription(`
-<a:bluefire1:761211197071687711> **Avatar (birini etiketlesen bile olur)** 
-▫️ Kullanım \`${prefix}Avatar\`
-<a:bluefire1:761211197071687711> **Uluslar Arası Korona Tablosu ** 
+ **Avatar (birini etiketlesen bile olur)** 
+▫️ Kullanım \`${prefix}avatar\`
+ **Uluslar Arası Korona Tablosu ** 
 ▫️ Kullanım \`${prefix}korona\`
-<a:bluefire1:761211197071687711> **Say Komudu** 
+ **Say Komudu** 
 ▫️ Kullanım  \`${prefix}eğlence\`
-<a:bluefire1:761211197071687711> **Kullanıcı Bilgi ** 
+ **Kullanıcı Bilgi ** 
 ▫️ Kullanım \`${prefix}bot\`
-<a:bluefire1:761211197071687711> **Sunucu Bilgi Komutları.** 
+**Sunucu Bilgi Komutları.** 
 ▫️ Kullanım  \`${prefix}sunucu-bilgi\`
 `)
 .setImage("https://media.tenor.com/images/3713680851494cff76ac9953272deacb/tenor.gif")
