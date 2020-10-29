@@ -5,7 +5,7 @@ if (message.channel.type !== "text") return;
 const limit = args[0] ? args[0] : 0;
   if(!limit) {
               var embed = new Discord.MessageEmbed()
-                .setDescription(`Doğru kullanım: \` !slowmode [0/120]\``)
+                .setDescription(`Doğru kullanım: \` a?slowmode [0/120]\``)
                 .setColor("RANDOM")
                 .setTimestamp()
             message.channel.send({embed})

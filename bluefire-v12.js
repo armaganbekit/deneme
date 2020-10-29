@@ -142,7 +142,7 @@ client.on("message", msg => {
           try {
             if (!msg.member.hasPermission("BAN_MEMBERS")) {
                   msg.delete();
-                    return msg.reply('**Bu Sunucuda** `Reklam Engelle`** Aktif Reklam Yapmana İzin Vermem İzin Vermem ? !**').then(msg => msg.delete(3000));
+                    return msg.reply('**Bu Sunucuda** `Reklam Engelle`** Aktif Reklam Yapmana İzin Vermem  ? !**').then(msg => msg.delete(3000));
    
  
   msg.delete(3000);                              

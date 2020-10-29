@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
   const userError = new Discord.MessageEmbed()
     .setColor('#ed455a')
       .setTitle('• Hata: 02 •')
-        .setDescription('```Yasağı kaldırmak için bir kullanıcı kimliği girmelisiniz g!unban İD```')
+        .setDescription('```Yasağı kaldırmak için bir kullanıcı kimliği girmelisiniz a?unban İD```')
  
   const userError2 = new Discord.MessageEmbed()
     .setColor('#ed455a')
