@@ -27,8 +27,7 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım  \`${prefix}kick\`
  **Gelişmiş Mesaj Temizleme Sistemi** 
 ▫️ Kullanım  \`${prefix}sil\`
- **Gelişmiş Duyuru Sistemi** 
-▫️ Kullanım  \`${prefix}duyuru\`
+
 
 `)
 .setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")

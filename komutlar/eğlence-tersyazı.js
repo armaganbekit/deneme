@@ -2,7 +2,7 @@ const discord = require('discord.js')
 exports.run = function(client, message, args,params) {
 
   if (args.length < 1) {
-    return message.reply('Doğru Kullanım !tersyazı merhaba')
+    return message.reply('Doğru Kullanım a?tersyazı merhaba')
   }
    
 message.channel.send(args.join(' ').split('').reverse().join(''))

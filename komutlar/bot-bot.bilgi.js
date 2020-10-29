@@ -9,8 +9,8 @@ exports.run = async (client, message, args) => {
   const istatistikler = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setTimestamp()
-    .setFooter("© 2020 Bluefire BOT", client.user.avatarURL())
-    .addField("» **Botun Sahibi**", "<@696366871414308894>| ⇝*๖̶̶̶ζ͜͡SÚPR£M£⇝#0001 ")
+    .setFooter("YouTube/4RM4G4N", client.user.avatarURL())
+    .addField("» **Botun Sahibi**", "<@709539256921489468>| **4RM4Ğ4NB3KİT#9757** ")
     .addField("» **Gecikme süreleri**","Mesaj Gecikmesi: {ping1} ms \nBot Gecikmesi: {ping2} ms"
         .replace("{ping1}", new Date().getTime() - message.createdTimestamp)
         .replace("{ping2}", client.ws.ping),true)
@@ -21,11 +21,9 @@ exports.run = async (client, message, args) => {
     .addField("» **Kanallar**", client.channels.cache.size.toLocaleString(), true)
     .addField("» **Discord.JS sürüm**", "v" + Discord.version, true)
     .addField("» **Node.JS sürüm**", `${process.version}`, true)
-    .addField("» **Müzik Çalınan Sunucu Sayısı**", client.voice.connections.size, true)
     .addField("» **CPU**",`\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``,true)
     .addField("» **Bit**", `\`${os.arch()}\``, true)
     .addField("» **İşletim Sistemi**", `\`\`${os.platform()}\`\``, true)
-    .addField("**» Bot Davet**"," [Davet Et](https://discordapp.com/oauth2/authorize?client_id=" + client.user.id + "&scope=bot&permissions=8)");
   return message.channel.send(istatistikler);
 };
 
