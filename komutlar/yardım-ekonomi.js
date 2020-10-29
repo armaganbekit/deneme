@@ -6,17 +6,16 @@ exports.run = function(client, message) {
 
 const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
-.setAuthor(`Everlasting`)
+.setAuthor(`BlueFire`)
 .setDescription(`
-s!günlük-para : Günlük Para (24 Saatte Bir Kullanılabilir)
-s!hesap-aç : Banka Hesap Açar (+20 Lira Verir) 
-s!hesabımı-sil : Banka Hesabınızı Siler
-s!hesap : Banka Hesabınız Hakkında Bilgi Verir
-s!para-gönder : Belirttiğiniz Kişiye Belirttiğiniz Miktarda Para Gönderir
-s!para : Bankadaki Paranızı Belirtir
-s!market : Marketi Gösterir
+s!aduketçek Aduket Çeker
+s!ara155 Polisi Arar
+s!balıktut Balık Tutarsınız
+s!
+s!
+s!
 `)
-.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")
+.setImage("https://cdn.discordapp.com/avatars/763453621818884137/e4d7dc219e8ac2da4a01771fa0cf70b2.png?size=2048")//Sponsor LOGO EVERLASTİNG 
 .setThumbnail(message.author.avatarURL())
 message.channel.send(yardım)
 
@@ -33,7 +32,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "ekonomi",
+  name: "eğlence2",
   description: 'Bizim yaptığımız bir yardım kodu.',
   usage: 'ekonomi'
 };
