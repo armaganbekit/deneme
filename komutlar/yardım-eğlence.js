@@ -18,6 +18,8 @@ const yardım = new Discord.MessageEmbed()
 ▫️ Kullanım \`${prefix}tersyazı\`
  **Wasted** 
 ▫️ Kullanım \`${prefix}wasted\`
+ **Saat** 
+▫️ Kullanım \`${prefix}saat\`
 `)
 .setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")
 .setThumbnail(message.author.avatarURL())
