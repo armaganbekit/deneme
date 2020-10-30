@@ -8,7 +8,7 @@ let result = Math.floor((Math.random() * replies.length));
 
 let gifembed = new Discord.MessageEmbed()
 
-.setTitle("<a:muck:748603457048412291> Marvel Gif <a:muck:748603457048412291> ;")
+.setTitle(":kissing_heart: Marvel Gif :kissing_heart: ")
 
 .setColor("BLACK")
 
@@ -26,7 +26,7 @@ exports.conf = {
 
   guildOnly: false,
 
-  aliases: ['gif-marvel','marvel-gif','gifmarvel','marvelgif'],
+  aliases: ['gif-marvel','marvel-gif','gifmarvel','marvelgif','marvel'],
 
   permLevel: 0
 
@@ -36,7 +36,7 @@ exports.help = {
 
   name: 'marvel-gif',
 
-  description: 'Darknes Code',
+  description: 'syzer code',
 
   usage: 'marvel'
 
