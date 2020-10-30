@@ -10,10 +10,16 @@ const yardım = new Discord.MessageEmbed()
 .setColor('GREEN')
 .setAuthor(`4RM4G4N`)
 .setDescription(`
- **Mesaj Sil** 
-▫️ Kullanım  \`${prefix}sil\`
+ **ID Alma** 
+▫️ Kullanım  \`${prefix}id\`
  **Botumuzun Pingini Öğren!** 
 ▫️ Kullanım \`${prefix}ping \`
+**Erkek Gifi Atar** 
+▫️ Kullanım \`${prefix}mangif \`
+**Anime Gifi Atar** 
+▫️ Kullanım \`${prefix}anime \`
+**Couple Gifi Atar** 
+▫️ Kullanım \`${prefix}couple \`
 `)
 .setImage("https://cdn.discordapp.com/attachments/768239553324122131/771466101606318081/abs.jpg")
 .setThumbnail(message.author.avatarURL())
