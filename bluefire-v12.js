@@ -605,8 +605,143 @@ client.channels.cache.get(modlog).send(embed)
 })
 // mod log son ///
 
+/// OTOROL SİSTEMİ syzer
 
+client.on("guildMemberAdd", async member => {
+  let kanal = await db.fetch(`otoRK_${member.guild.id}`);
+  let rol = await db.fetch(`otoRL_${member.guild.id}`);
+  let mesaj = db.fetch(`otoRM_${member.guild.id}`);
+  if (!rol) return;
 
+  if (!mesaj) {
+    client.channels.cache
+      .get(kanal)
+      .send(
+        "4RM4G4N" +
+          member.user.username +
+          "`** HoşGeldin! Otomatik Rolün Verildi Seninle Beraber** `" +
+          member.guild.memberCount +
+          "` **Kişiyiz!**"
+      );
+    return member.roles.add(rol);
+  }
+
+  if (mesaj) {
+    var mesajs = mesaj
+      .replace("-uye-", `${member.user}`)
+      .replace("-uyetag-", `${member.user.tag}`)
+      .replace("-rol-", `${member.guild.roles.cache.get(rol).name}`)
+      .replace("-server-", `${member.guild.name}`)
+      .replace("-uyesayisi-", `${member.guild.memberCount}`)
+      .replace(
+        "-botsayisi-",
+        `${member.guild.members.cache.filter(m => m.user.bot).size}`
+      )
+      .replace("-bolge-", `${member.guild.region}`)
+      .replace("-kanalsayisi-", `${member.guild.channels.cache.size}`);
+    member.roles.add(rol);
+    return client.channels.cache.get(kanal).send(mesajs);
+  }
+});
+
+// OTOROL SON syzer
+
+// SAYAÇ SİSTEMİ
+
+client.on("guildMemberAdd", async member => {
+  const kanal = await db.fetch(`sayacK_${member.guild.id}`);
+  if (!kanal) return;
+  const sayaç = await db.fetch(`sayacS_${member.guild.id}`);
+  const sonuç = sayaç - member.guild.memberCount;
+  const mesaj = await db.fetch(`sayacHG_${member.guild.id}`);
+  ///....
+
+  ///....
+  if (!mesaj) {
+    return client.channels.cache
+      .get(kanal)
+      .send(
+        "<a:GiriGif:753288764377399377> `" +
+          member.user.username +
+          "`**Adlı Kullanıcı Aramıza Katıldı!** `" +
+          sayaç +
+          "` **Kişi Olmamıza** `" +
+          sonuç +
+          "` **Kişi Kaldı.** `" +
+          member.guild.memberCount +
+          "` **Kişiyiz!**"
+      );
+  }
+
+  if (member.guild.memberCount == sayaç) {
+    return client.channels
+      .get(kanal)
+      .send(
+        `<a:hg:752305081545916438> **Sayaç Sıfırlandı!** \`${member.guild.memberCount}\` **Kişiyiz!**`
+      );
+    await db.delete(`sayacK_${member.guild.id}`);
+    await db.delete(`sayacS_${member.guild.id}`);
+    await db.delete(`sayacHG_${member.guild.id}`);
+    await db.delete(`sayacBB_${member.guild.id}`);
+  }
+  if (mesaj) {
+    const mesaj31 = mesaj
+      .replace("-uyetag-", `${member.user.tag}`)
+      .replace("-server-", `${member.guild.name}`)
+      .replace("-uyesayisi-", `${member.guild.memberCount}`)
+      .replace(
+        "-botsayisi-",
+        `${member.guild.members.filter(m => m.user.bot).size}`
+      )
+      .replace("-bolge-", `${member.guild.region}`)
+      .replace("-kanalsayisi-", `${member.guild.channels.size}`)
+      .replace("-kalanuye-", `${sonuç}`)
+      .replace("-hedefuye-", `${sayaç}`);
+    return client.channels.cache.get(kanal).send(mesaj31);
+  }
+});
+
+client.on("guildMemberRemove", async member => {
+  const kanal = await db.fetch(`sayacK_${member.guild.id}`);
+  const sayaç = await db.fetch(`sayacS_${member.guild.id}`);
+  const sonuç = sayaç - member.guild.memberCount;
+  const mesaj = await db.fetch(`sayacBB_${member.guild.id}`);
+  if (!kanal) return;
+  if (!sayaç) return;
+  ///....
+
+  if (!mesaj) {
+    return client.channels.cache
+      .get(kanal)
+      .send(
+        "<a:kGif:753288772715675699> `" +
+          member.user.username +
+          "` **Adlı Kullanıcı Aramızdan Ayrıldı.**`" +
+          sayaç +
+          "` **Kişi Olmamıza** `" +
+          sonuç +
+          "` **Kişi Kaldı.** `" +
+          member.guild.memberCount +
+          "` **Kişiyiz!**"
+      );
+  }
+
+  if (mesaj) {
+    const mesaj31 = mesaj
+      .replace("-uye-", `${member.user.tag}`)
+      .replace("-server-", `${member.guild.name}`)
+      .replace("-uyesayisi-", `${member.guild.memberCount}`)
+      .replace(
+        "-botsayisi-",
+        `${member.guild.members.filter(m => m.user.bot).size}`
+      )
+      .replace("-bolge-", `${member.guild.region}`)
+      .replace("-kanalsayisi-", `${member.guild.channels.cache.size}`)
+      .replace("-kalanuye-", `${sonuç}`)
+      .replace("-hedefuye-", `${sayaç}`);
+    return client.channels.cache.get(kanal).send(mesaj31);
+  }
+});
 
 //syzer
 client.login(ayarlar.token);
